@@ -23,10 +23,7 @@ def calculation():
     c=(bottom.get())
     h=(height.get())
     s=0
-    print(a)
-    print(b)
-    print(c)
-    print(h)
+    
     if a!='' and b!='' and c!='':
         a=float(a)
         b=float(b)
@@ -36,7 +33,7 @@ def calculation():
         answer=math.sqrt(s*(s-a)*(s-b)*(s-c))
         answer=round(answer,3)
         result.set(answer)
-    elif a=='' or b=='' and c!='' and h!='':
+    elif (a=='' or b=='') and c!='' and h!='':
         c=float(c)
         h=float(h)
         answer=(c*h)/2
